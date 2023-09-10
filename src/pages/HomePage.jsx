@@ -1,11 +1,11 @@
 import React from 'react'
-import Header from '../assets/components/Header'
-import Home from '../assets/components/Home'
+import Header from '../components/Header'
+import Home from '../components/Home'
 const HomePage = () => {
   return (
     <>
     <Header/>
-    {/* <Home/> */}
+    <Home/>
     </>
   )
 }
