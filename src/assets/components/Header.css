@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;800;900&display=swap');
+
+header{
+    margin: 15px;
+}
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 980px;
+    margin: auto;
+}
+.header img {
+    height: 60px;
+    width: 250px;
+}
+.headerItens {
+    display: flex;
+    gap: 5em;
+    align-items: center;
+}
+
+.headerItens nav a {
+    color: #2D848D;
+    font-size: 1.4rem;
+    padding: 0 10px 0 10px;
+    font-family: Inter;
+}
+
+.headerItens button {
+    color: #fff;
+    font-size: 1.6rem;
+    font-family: Inter;
+    font-style: italic;
+    width: 230px;
+    height: 30px;
+    border-radius: 24px;
+    background: #2D848D;
+    box-shadow: 4px 4px 4px 0px rgba(45, 132, 141, 0.60);
+}
+/* RESPONSIVIDADE */
+
+@media (max-width:468px) {
+    .headerItens nav{
+        display: none;
+    }
+    .one,
+    .two,
+    .three {
+        background-color: #2D848D;
+        height: 5px;
+        width: 100%;
+        margin: 6px auto;
+        transition-duration: 0.3s;
+    }
+    .menuBurger {
+        background-color: #fff;
+        width: 40px;
+        height: 30px;
+        margin: 5px 0 0 0;
+    }
+
+    /* Fullsize menuItens Mobile */
+
+    .headerItens.on{
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: #fff;
+        width: 100vw;
+        height: 100vh;
+        z-index: 10;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .headerItens.on nav{
+        display: block;
+    }
+    .headerItens.on .menuBurger {
+        position: absolute;
+        right: 0;
+        top: 15px;
+        margin: 0 10px 0 0;
+    }
+    .headerItens.on .menuBurger .one{
+        transform: rotate(45deg) translate(7px,7px);
+    }  .headerItens.on .menuBurger .two{
+       opacity: 0;
+    }  .headerItens.on .menuBurger .three{
+        transform: rotate(-45deg) translate(8px,-10px);
+    }
+    .headerItens.on nav a{
+        text-align: center;
+        display: block;
+        font-size: 2rem;
+        line-height: 4rem;
+        transition-duration: 0.5s;
+    }
+}

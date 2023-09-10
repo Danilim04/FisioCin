@@ -1,0 +1,14 @@
+*{
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  padding: 0;
+  box-shadow: none;
+  border: none;
+}
+body{
+  height: 100vh;
+}
+html{
+  font-size: 62.5%  ;
+}
