@@ -1,0 +1,144 @@
+section.ourteam {
+    margin: 50px 0;
+    height: 10vh;
+}
+.containerOurteam h1 {
+    color: #2D848D;
+    text-align: center;
+    font-family: Inter;
+    font-size: clamp(2.8rem, 1.3813rem + 1.7986vw, 4.8rem);
+    font-style: italic;
+    margin: 0 0 8px 0;
+}
+
+.linha {
+    background: #2D848D;
+    height: 3px;
+    width: 100px;
+    margin: auto;
+}
+/* Carrossel Nossa equipe */
+section.faixa {
+    margin: 50px 0 0 0;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.containerFaixa {
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.containerText {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 50px;
+    width: 50%;
+    margin: 0 0 50px 50px;
+}
+.containerimg {
+    margin: 0 50px 0 0;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.containerimg img {
+    width: 330px;
+    height: 448px;
+}
+.title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.title h1 {
+    color: #FFF;
+    font-family: Inter;
+    font-size: clamp(2.6rem, 0.3076rem + 2.1583vw, 3.6rem);
+    font-style: italic;
+}
+
+.linha2 {
+    background: #FFF;
+    width: 100px;
+    height: 3px;
+}
+
+.text {
+    width: 80%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.containerText button {
+    border-radius: 5px;
+    background: #FFF;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    width: 190px;
+    height: 40px;
+    color: #2D848D;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: Inter;
+    font-size: 1.6rem;
+    font-style: italic;
+}
+.text p {
+    color: #FFF;
+    font-family: Inter;
+    font-size: clamp(1.4rem, 0.2788rem + 1.0791vw, 3rem);
+    line-height:clamp(2.2rem, 0.2788rem + 1.0791vw, 3rem);
+}
+
+/* Responsividade */
+@media (max-width:768px) {
+    .containerimg{
+        margin: 0;
+    }
+    .containerText{
+        margin: 0 0 30px 30px;
+    }
+    .text p{
+        text-align: center;
+    }
+    .containerimg img {
+        width: 250px;
+        height: 348px;
+    }
+}
+@media (max-width:580px) {
+    .containerFaixa{
+        flex-direction: column;
+        gap: 100px;
+    }
+    .containerimg{
+        margin: 0;
+    }
+    .containerText{
+        margin: 0;
+    }
+    section.faixa{
+        height: 200vh;
+    }
+    .containerText{
+        width: auto;
+    }
+    .containerText button{
+        margin: 0 0 50px 0;
+    }
+
+}
+

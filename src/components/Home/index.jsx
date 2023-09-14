@@ -1,7 +1,7 @@
 import React from 'react'
-import './Home.css'
+import './style/Home.css'
 import { FaWhatsapp } from 'react-icons/fa'
-import imageHome from '../assets/image/home.png'
+import imageHome from '../../assets/image/home.png'
 const Home = () => {
   return (
     <>

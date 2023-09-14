@@ -1,7 +1,7 @@
 
 import { FaWhatsapp } from 'react-icons/fa'
 import { useState } from 'react'
-import './Header.css'
+import './Style/Header.css'
 
 const Header = () => {
     const [menuOpen, setMenuOpen] = useState(false);
