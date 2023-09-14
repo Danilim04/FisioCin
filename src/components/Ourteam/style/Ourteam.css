@@ -131,13 +131,10 @@ section.faixa {
         margin: 0;
     }
     section.faixa{
-        height: 200vh;
+        height: 250vh;
     }
     .containerText{
         width: auto;
-    }
-    .containerText button{
-        margin: 0 0 50px 0;
     }
 
 }
