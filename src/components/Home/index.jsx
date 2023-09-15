@@ -6,7 +6,7 @@ const Home = () => {
   return (
     <>
       
-      <section style={{backgroundImage:`url(${imageHome}) `}}  className='hero' >
+      <section className='hero' >
         <div className="container">
           <h2>Seu Movimento <br /> <strong>Nossa Prioridade</strong></h2>
           <p>Descubra o poder da <br />

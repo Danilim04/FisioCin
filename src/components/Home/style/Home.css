@@ -2,6 +2,7 @@ section.hero {
     margin: 15px 0;
     height: 100vh;
     width: 100vw;
+    background-image: url(../../../assets/image/home.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -57,8 +58,10 @@ section.hero {
 @media (max-width:468px) {
     section.hero{
         display: flex;
+        height: 100vh;
         align-items: center;
         justify-content: center;
+        background-image: url(../../../assets/image/homeMobile.png);
     }
     .container{
         display: flex;
@@ -68,4 +71,5 @@ section.hero {
     .container h2,p{
         text-align: center;
     }
+
 }

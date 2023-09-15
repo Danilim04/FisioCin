@@ -2,6 +2,7 @@ section.ourteam {
     margin: 50px 0;
     height: 10vh;
 }
+
 .containerOurteam h1 {
     color: #2D848D;
     text-align: center;
@@ -17,6 +18,7 @@ section.ourteam {
     width: 100px;
     margin: auto;
 }
+
 /* Carrossel Nossa equipe */
 section.faixa {
     margin: 50px 0 0 0;
@@ -24,6 +26,7 @@ section.faixa {
     width: 100vw;
     display: flex;
     align-items: center;
+    background-image: url('../../../assets/image/Rectangle.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -45,6 +48,7 @@ section.faixa {
     width: 50%;
     margin: 0 0 50px 50px;
 }
+
 .containerimg {
     margin: 0 50px 0 0;
     width: 50%;
@@ -52,10 +56,12 @@ section.faixa {
     align-items: center;
     justify-content: center;
 }
+
 .containerimg img {
     width: 330px;
     height: 448px;
 }
+
 .title {
     display: flex;
     flex-direction: column;
@@ -96,46 +102,80 @@ section.faixa {
     font-size: 1.6rem;
     font-style: italic;
 }
+
 .text p {
     color: #FFF;
     font-family: Inter;
     font-size: clamp(1.4rem, 0.2788rem + 1.0791vw, 3rem);
-    line-height:clamp(2.2rem, 0.2788rem + 1.0791vw, 3rem);
+    line-height: clamp(2.2rem, 0.2788rem + 1.0791vw, 3rem);
 }
-
+.setaEsquerda{
+    position: absolute;
+    left: 0;
+    display: flex;
+    align-items: center;
+    margin: 0 0 0 20px;
+    color: #FFF;
+}
+.setaEsquerda svg {
+    width: 40px;
+    height: 40px;
+}
+.setaDireta{
+    position: absolute;
+    right: 0;
+    display: flex;
+    align-items: center;
+    margin: 0 30px 0 0;
+    color: #FFF;
+}
+.setaDireta svg {
+    width: 40px;
+    height: 40px;
+}
 /* Responsividade */
 @media (max-width:768px) {
-    .containerimg{
+    .containerimg {
         margin: 0;
     }
-    .containerText{
+
+    .containerText {
         margin: 0 0 30px 30px;
     }
-    .text p{
+
+    .text p {
         text-align: center;
     }
+
     .containerimg img {
         width: 250px;
         height: 348px;
     }
 }
+
 @media (max-width:580px) {
-    .containerFaixa{
+    section.ourteam{
+        margin: 0 0 10px 0;
+    }
+    .containerFaixa {
         flex-direction: column;
         gap: 100px;
     }
-    .containerimg{
+
+    .containerimg {
         margin: 0;
     }
-    .containerText{
+
+    .containerText {
         margin: 0;
     }
-    section.faixa{
-        height: 250vh;
+
+    section.faixa {
+        height: 230vh;
+        margin: 0;
+        background-image: url('../../../assets/image/rectangleMobile.png');
     }
-    .containerText{
+    .containerText {
         width: auto;
     }
-
 }
-
