@@ -45,30 +45,42 @@ section.hero {
     width: 200px;
     height: 50px;
     color: #FFF;
-    color: #FFF;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     font-family: Inter;
     font-size: 1.6rem;
     text-align: center;
     margin-top: 5px;
+    transition: all 0.5s ease-in;
+
+}
+
+.container button:hover {
+    transform: scale(1.1);
+    background: #FFF;
+    box-shadow: 0px 0px 0px 4px rgba(255, 255, 255, 0.40), 0px 4px 4px 0px rgba(255, 255, 255, 0.40);
+    cursor: pointer;
+    color: #2D848D;
 }
 
 /* RESPONSIVIDADE */
 
 @media (max-width:468px) {
-    section.hero{
+    section.hero {
         display: flex;
         height: 100vh;
         align-items: center;
         justify-content: center;
         background-image: url(../../../assets/image/homeMobile.png);
     }
-    .container{
+
+    .container {
         display: flex;
         align-items: center;
         justify-self: center;
     }
-    .container h2,p{
+
+    .container h2,
+    p {
         text-align: center;
     }
 

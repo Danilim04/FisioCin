@@ -1,6 +1,6 @@
 
 import { FaWhatsapp } from 'react-icons/fa'
-import { useState } from 'react'
+import { useState,useEffect } from 'react'
 import './Style/Header.css'
 
 const Header = () => {
@@ -9,6 +9,13 @@ const Header = () => {
     const toggleMenu = () => {
         setMenuOpen(!menuOpen); // Use setMenuOpen para atualizar o estado
     }
+    useEffect(() => {
+        if (menuOpen) {
+            document.body.style.overflowY = 'hidden';
+        } else {
+            document.body.style.overflowY = 'auto';
+        }
+    }, [menuOpen]);
 
     return (
         <>
@@ -16,7 +23,7 @@ const Header = () => {
                 <div className="header">
                     <img src="./image/Logo.png" alt="Logo da clinica" />
 
-                    <div className={`headerItens ${menuOpen ? 'on' : ''}`}>
+                    <div  className={`headerItens ${menuOpen ? 'on' : ''}`}>
                         <div onClick={toggleMenu} className="menuBurger">
                             <div className='one'></div>
                             <div className='two'></div>
