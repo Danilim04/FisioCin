@@ -1,6 +1,6 @@
 section.hero {
-    margin: 15px 0;
-    height: 100vh;
+    margin: 15px 0 0 0;
+    height: 110vh;
     width: 100vw;
     background-image: url(../../../assets/image/home.png);
     background-repeat: no-repeat;
