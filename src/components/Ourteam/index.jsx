@@ -1,4 +1,4 @@
-import './Style/Ourteam.css'
+import './style/Ourteam.css'
 import { FaAngleRight } from 'react-icons/fa'
 import { FaAngleLeft } from 'react-icons/fa'
 import dani from '../../assets/image/Dani.png'

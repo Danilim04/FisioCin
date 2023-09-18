@@ -16,6 +16,9 @@ const Specialties = () => {
               <div className="containerImgYoga">
                 <img src={yoga} alt="" />
               </div>
+              <div className="containerTextYoga">
+                
+              </div>
             </div>
             <div className="containerCard2"></div>
             <div className="containerCard3"></div>
