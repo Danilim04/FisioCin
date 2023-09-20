@@ -1,0 +1,54 @@
+.card {
+    border-radius: 10px;
+    background: #FFF;
+    box-shadow: -10px -10px 15px 0px rgba(0, 0, 0, 0.25), 10px 10px 15px 0px rgba(0, 0, 0, 0.25);
+    max-width: 485px;
+    width: 100%;
+    height: 424px;
+    margin: 20px 0;
+    display: grid;
+    grid-template-columns: 0.2fr 0.8fr;
+    grid-template-rows: 0.8fr 1.6fr;
+    grid-auto-columns: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "Imagem- Titulo"
+        ". Texto";
+    align-items: center;
+}
+
+.card img {
+    grid-area: Imagem-;
+    width: 70px;
+    height: 70px;
+    margin: auto;
+}
+
+.card h1 {
+    grid-area: Titulo;
+    color: #2D848D;
+    font-family: Inter;
+    font-size: clamp(2.2rem, 1.0288rem + 1.0791vw, 3.2rem);
+    font-style: italic;
+    font-weight: 500;
+    margin: 0 0 0 10px;
+}
+
+.card ul {
+    grid-area: Texto;
+    color: #6C7779;
+    font-family: Inter;
+    font-size: clamp(0.8rem, 1.0288rem + 1.0791vw, 1.2rem);
+    font-style: italic;
+    font-weight: 500;
+    height: 100%;
+    width: 80%;
+    margin: 0 0 30px 10px;
+}
+@media (max-width:528px) {
+    .card img {
+        width: 60px;
+        height: 60px;
+    }
+}
