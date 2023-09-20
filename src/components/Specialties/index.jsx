@@ -4,7 +4,7 @@ import yoga from '../../assets/image/icons/Yoga.png'
 import ortopedia from '../../assets/image/icons/Ortopedia.png'
 import fonologia from '../../assets/image/icons/Fonologia.png'
 import esportiva from '../../assets/image/icons/Esportiva.png'
-import Cards from './cards'
+import Cards from './Cards'
 const Specialties = () => {
   return (
     <>
