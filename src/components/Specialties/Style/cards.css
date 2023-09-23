@@ -3,10 +3,10 @@
     background: #FFF;
     box-shadow: -10px -10px 15px 0px rgba(0, 0, 0, 0.25), 10px 10px 15px 0px rgba(0, 0, 0, 0.25);
     max-width: 485px;
-    width: 100%;
+    min-width: 245px;
     height: 424px;
-    margin: 20px 0;
     display: grid;
+    margin: auto;
     grid-template-columns: 0.2fr 0.8fr;
     grid-template-rows: 0.8fr 1.6fr;
     grid-auto-columns: 1fr;
@@ -20,8 +20,9 @@
 
 .card img {
     grid-area: Imagem-;
-    width: 70px;
-    height: 70px;
+    width: 60px;
+    height: 60px;
+    padding: 5px;
     margin: auto;
 }
 
@@ -39,16 +40,20 @@
     grid-area: Texto;
     color: #6C7779;
     font-family: Inter;
-    font-size: clamp(0.8rem, 1.0288rem + 1.0791vw, 1.2rem);
+    font-size: clamp(0.5rem, 1.0288rem + 1.0791vw, 1.2rem);
     font-style: italic;
     font-weight: 500;
     height: 100%;
     width: 80%;
     margin: 0 0 30px 10px;
 }
-@media (max-width:528px) {
+
+@media (max-width:768px) {
+    .card ul {
+        font-size: clamp(0.5rem, 1.0288rem + 1.0791vw, 1rem);
+    }
     .card img {
-        width: 60px;
-        height: 60px;
+        width: 50px;
+        height: 50px;
     }
 }

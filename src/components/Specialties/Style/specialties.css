@@ -1,8 +1,12 @@
-section.cards{
+section.cards {
     height: 150vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
 .specialtiesTitle {
-    margin: 100px 0 0 0;
+    margin: 200px 0 0 0;
     height: 10vh;
     width: 100%;
     display: flex;
@@ -14,25 +18,34 @@ section.cards{
     color: #2D848D;
     text-align: center;
     font-family: Inter;
-    font-size: clamp(2.8rem, 1.3813rem + 1.7986vw, 4.8rem);
+    font-size: clamp(2.2rem, 1.3813rem + 1.7986vw, 4.8rem);
     font-style: italic;
     margin: 0 0 8px 0;
 }
 
 .containerCards {
     display: grid;
-    grid-template-columns: repeat(2, 0.5fr);
-    grid-template-rows: repeat(2, 0.5fr);
-    justify-items: center;
-    align-items: center;
-    height: 110vh;
+    grid-template-areas: "card card" "card card";
+    grid-gap: 30px;
+    height: 80vh;
     width: 80%;
     margin: 150px auto;
 }
 
-@media (max-width:768) {
+@media (max-width:570px) {
     .containerCards {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        width: 90%;
+    }
+    section.cards {
         height: 250vh;
     }
-    
+    .specialtiesTitle {
+        margin: 75px 0;
+        height: 5vh;
+    }
 }
