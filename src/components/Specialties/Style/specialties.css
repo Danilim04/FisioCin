@@ -43,10 +43,11 @@ section.cards {
         height: 75%;
     }
     section.cards {
-        height: 300vh;
+        height: 280vh;
         display: flex;
-        justify-content: start;
-        align-items: start;
+        justify-content: center;
+        align-items: center;
+        padding: 30px 0 0 0 ;
     }
     .specialtiesTitle {
         margin: 150px 0 0 0;
