@@ -40,10 +40,10 @@ section.cards {
         align-items: center;
         gap: 30px;
         width: 90%;
-        height: 90%;
+        height: 75%;
     }
     section.cards {
-        height: 315vh;
+        height: 300vh;
         display: flex;
         justify-content: start;
         align-items: start;
