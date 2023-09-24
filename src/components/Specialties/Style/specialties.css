@@ -42,10 +42,10 @@ section.cards {
         width: 90%;
     }
     section.cards {
-        height: 250vh;
+        height: 300vh;
     }
     .specialtiesTitle {
-        margin: 75px 0;
+        margin: 280px 0 0 0;
         height: 5vh;
     }
 }
