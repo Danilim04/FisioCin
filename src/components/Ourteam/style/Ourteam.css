@@ -185,6 +185,10 @@ section.faixa {
 }
 
 @media (max-width:580px) {
+    .containerText button {
+        width: 130px;
+        font-size: 1.2rem;
+    }
     section.ourteam {
         margin: 0 0 10px 0;
     }

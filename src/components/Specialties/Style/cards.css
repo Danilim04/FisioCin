@@ -50,7 +50,7 @@
 
 @media (max-width:768px) {
     .card ul {
-        font-size: clamp(0.5rem, 1.0288rem + 1.0791vw, 1rem);
+        font-size: clamp(0.4rem, 1.0288rem + 1.0791vw, 0.8rem);
     }
     .card img {
         width: 50px;
