@@ -40,9 +40,13 @@ section.cards {
         align-items: center;
         gap: 30px;
         width: 90%;
+        height: 90%;
     }
     section.cards {
-        height: 350vh;
+        height: 300vh;
+        display: flex;
+        justify-content: start;
+        align-items: start;
     }
     .specialtiesTitle {
         margin: 150px 0 0 0;
