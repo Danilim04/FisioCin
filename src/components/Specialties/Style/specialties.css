@@ -43,7 +43,7 @@ section.cards {
         height: 90%;
     }
     section.cards {
-        height: 300vh;
+        height: 315vh;
         display: flex;
         justify-content: start;
         align-items: start;
