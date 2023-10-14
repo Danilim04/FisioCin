@@ -2,11 +2,7 @@
     border-radius: 10px;
     background: #FFF;
     box-shadow: -10px -10px 15px 0px rgba(0, 0, 0, 0.25), 10px 10px 15px 0px rgba(0, 0, 0, 0.25);
-    max-width: 485px;
-    min-width: 245px;
-    height: 424px;
     display: grid;
-    margin: auto;
     grid-template-columns: 0.2fr 0.8fr;
     grid-template-rows: 0.8fr 1.6fr;
     grid-auto-columns: 1fr;
@@ -40,7 +36,7 @@
     grid-area: Texto;
     color: #6C7779;
     font-family: Inter;
-    font-size: clamp(0.8rem, 1.0288rem + 1.0791vw, 1.2rem);
+    font-size: clamp(1rem, 1.0288rem + 1.0791vw, 1.2rem);
     font-style: italic;
     font-weight: 500;
     height: 100%;

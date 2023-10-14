@@ -8,8 +8,8 @@ import Cards from './Cards'
 const Specialties = () => {
   return (
     <>
-      <section className='specialtiesTitle'>
-        <div className="containerTitle">
+        <section className="ourteam">
+        <div className="containerOurteam">
           <h1>Especialidades</h1>
           <div className="linha"></div>
         </div>
