@@ -4,6 +4,7 @@ import { FaAngleLeft } from 'react-icons/fa'
 import dani from '../../assets/image/Dani.png'
 import carlos from '../../assets/image/Carlos.png'
 import { useState } from 'react'
+import Title from '../Titles/Title'
 
 const Ourteam = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -32,29 +33,62 @@ const Ourteam = () => {
   };
   return (
     <>
-      <section className="ourteam">
-        <div className="containerOurteam">
-          <h1>Nossa Equipe</h1>
-          <div className="linha"></div>
-        </div>
-      </section>
-      <section className="faixa">
+      <Title 
+      title="Nosso time"
+      />
+      <section className="faixa"
+        data-aos="fade-up"
+        data-aos-offset="200"
+        data-aos-delay="80"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+        data-aos-mirror="false"
+        data-aos-once="false"
+        data-aos-anchor-placement="top-center"
+      >
         <div className="containerFaixa">
           <div onClick={avancar} className="setaDireta"><FaAngleRight /></div>
           <div onClick={retroceder} className="setaEsquerda"><FaAngleLeft /></div>
           <div className="containerText">
-            <div className="title">
+            <div 
+              data-aos="fade-up"
+              data-aos-offset="200"
+              data-aos-delay="80"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+              data-aos-mirror="false"
+              data-aos-once="false"
+              data-aos-anchor-placement="top-center"
+            className="title">
               <h1>{conteudo[currentIndex].titulo}</h1>
               <div className="linha2"></div>
             </div>
-            <div className="text">
+            <div 
+              data-aos="fade-up"
+              data-aos-offset="200"
+              data-aos-delay="80"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+              data-aos-mirror="false"
+              data-aos-once="false"
+              data-aos-anchor-placement="top-center"
+            className="text">
               <p>
                 {conteudo[currentIndex].texto}
               </p>
             </div>
             <a href="https://wa.me/5531975455753?text=Ol%C3%A1%21+Quero+saber+os+hor%C3%A1rios+dispon%C3%ADveis+para+agendar+uma+consulta+com+a+Daniela+na+especialidade+de+Fisioterapia+com+foco+em+Cinesioterapia%3F+%F0%9F%98%8A"> <button > Agende seu horário </button> </a>
           </div>
-          <div className="containerimg">
+          <div 
+            data-aos="fade-up"
+            data-aos-offset="200"
+            data-aos-delay="80"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+            data-aos-mirror="false"
+            data-aos-once="false"
+            data-aos-anchor-placement="top-center"
+          className="containerimg">
             <img src={conteudo[currentIndex].imagem} alt="" />
           </div>
         </div>

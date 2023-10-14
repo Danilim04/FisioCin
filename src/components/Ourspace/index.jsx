@@ -1,8 +1,14 @@
 import React from 'react'
+import Title from '../Titles/Title'
+
 
 const Ourspace = () => {
   return (
-    <div>Ourspace</div>
+    <>
+    <Title
+    title="Nosso espaço"
+    />
+    </>
   )
 }
 

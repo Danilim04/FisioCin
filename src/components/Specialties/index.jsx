@@ -5,15 +5,13 @@ import ortopedia from '../../assets/image/icons/Ortopedia.png'
 import fonologia from '../../assets/image/icons/Fonologia.png'
 import esportiva from '../../assets/image/icons/Esportiva.png'
 import Cards from './Cards'
+import Title from '../Titles/Title'
 const Specialties = () => {
   return (
     <>
-        <section className="ourteam">
-        <div className="containerOurteam">
-          <h1>Especialidades</h1>
-          <div className="linha"></div>
-        </div>
-      </section>
+      <Title 
+      title="Especialidades"
+      />
       <section className="cards" >
         <div className="containerCards">
           <Cards
