@@ -1,0 +1,31 @@
+section.ourspace {
+    margin: 100px 0 0 0;
+}
+.containerImagemCima{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+.containerImagemBaixo {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+.containerImagens {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+@media (max-width:425px) {
+    .containerImagemCima {
+        display: flex;
+    }
+}
