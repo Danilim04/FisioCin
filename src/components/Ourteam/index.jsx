@@ -33,8 +33,8 @@ const Ourteam = () => {
   };
   return (
     <>
-      <Title 
-      title="Nosso time"
+      <Title
+        title="Nosso time"
       />
       <section className="faixa"
         data-aos="fade-up"
@@ -49,7 +49,15 @@ const Ourteam = () => {
         <div className="containerFaixa">
           <div onClick={avancar} className="setaDireta"><FaAngleRight /></div>
           <div onClick={retroceder} className="setaEsquerda"><FaAngleLeft /></div>
-          <div data-aos="fade-right" className="containerText">
+          <div data-aos="fade-right"
+            data-aos-offset="0"
+            data-aos-delay="80"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+            data-aos-mirror="true"
+            data-aos-once="false"
+            data-aos-anchor-placement="top-center"
+            className="containerText">
             <div className="title">
               <h1>{conteudo[currentIndex].titulo}</h1>
               <div className="linha2"></div>
@@ -61,9 +69,16 @@ const Ourteam = () => {
             </div>
             <a href="https://wa.me/5531975455753?text=Ol%C3%A1%21+Quero+saber+os+hor%C3%A1rios+dispon%C3%ADveis+para+agendar+uma+consulta+com+a+Daniela+na+especialidade+de+Fisioterapia+com+foco+em+Cinesioterapia%3F+%F0%9F%98%8A"> <button > Agende seu horário </button> </a>
           </div>
-          <div 
-           data-aos="fade-left"
-          className="containerimg">
+          <div
+            data-aos="fade-left"
+            data-aos-offset="0"
+            data-aos-delay="80"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+            data-aos-mirror="true"
+            data-aos-once="false"
+            data-aos-anchor-placement="top-center"
+            className="containerimg">
             <img src={conteudo[currentIndex].imagem} alt="" />
           </div>
         </div>
