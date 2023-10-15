@@ -13,7 +13,7 @@ const Specialties = () => {
       title="Especialidades"
       />
       <section className="cards" >
-        <div className="containerCards">
+        <div data-aos="fade-up" className="containerCards">
           <Cards
             title="Cinesioterapia"
             ponto1="Avaliação detalhada: O tratamento de cinesioterapia começa com uma análise completa da condição física e das necessidades do paciente, permitindo ao fisioterapeuta desenvolver um plano personalizado."

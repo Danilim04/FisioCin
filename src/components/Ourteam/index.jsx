@@ -38,7 +38,7 @@ const Ourteam = () => {
       />
       <section className="faixa"
         data-aos="fade-up"
-        data-aos-offset="200"
+        data-aos-offset="0"
         data-aos-delay="80"
         data-aos-duration="1000"
         data-aos-easing="ease-in-out"
@@ -49,30 +49,12 @@ const Ourteam = () => {
         <div className="containerFaixa">
           <div onClick={avancar} className="setaDireta"><FaAngleRight /></div>
           <div onClick={retroceder} className="setaEsquerda"><FaAngleLeft /></div>
-          <div className="containerText">
-            <div 
-              data-aos="fade-up"
-              data-aos-offset="200"
-              data-aos-delay="80"
-              data-aos-duration="1000"
-              data-aos-easing="ease-in-out"
-              data-aos-mirror="false"
-              data-aos-once="false"
-              data-aos-anchor-placement="top-center"
-            className="title">
+          <div data-aos="fade-right" className="containerText">
+            <div className="title">
               <h1>{conteudo[currentIndex].titulo}</h1>
               <div className="linha2"></div>
             </div>
-            <div 
-              data-aos="fade-up"
-              data-aos-offset="200"
-              data-aos-delay="80"
-              data-aos-duration="1000"
-              data-aos-easing="ease-in-out"
-              data-aos-mirror="false"
-              data-aos-once="false"
-              data-aos-anchor-placement="top-center"
-            className="text">
+            <div className="text">
               <p>
                 {conteudo[currentIndex].texto}
               </p>
@@ -80,14 +62,7 @@ const Ourteam = () => {
             <a href="https://wa.me/5531975455753?text=Ol%C3%A1%21+Quero+saber+os+hor%C3%A1rios+dispon%C3%ADveis+para+agendar+uma+consulta+com+a+Daniela+na+especialidade+de+Fisioterapia+com+foco+em+Cinesioterapia%3F+%F0%9F%98%8A"> <button > Agende seu horário </button> </a>
           </div>
           <div 
-            data-aos="fade-up"
-            data-aos-offset="200"
-            data-aos-delay="80"
-            data-aos-duration="1000"
-            data-aos-easing="ease-in-out"
-            data-aos-mirror="false"
-            data-aos-once="false"
-            data-aos-anchor-placement="top-center"
+           data-aos="fade-left"
           className="containerimg">
             <img src={conteudo[currentIndex].imagem} alt="" />
           </div>

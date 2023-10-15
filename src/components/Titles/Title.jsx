@@ -10,8 +10,8 @@ const Title = ({title}) => {
             <section className="title"
                 
                 data-aos="fade-up"
-                data-aos-offset="2000"
-                data-aos-delay="10"
+                data-aos-offset="0"
+                data-aos-delay="80"
                 data-aos-duration="1000"
                 data-aos-easing="ease-in-out"
                 data-aos-mirror="true"
