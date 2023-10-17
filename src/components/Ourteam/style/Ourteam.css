@@ -1,12 +1,12 @@
 
 /* Carrossel Nossa equipe */
 section.faixa {
-    margin: 50px 0 50px 0;
-    height: 110vh;
-    width: 100vw;
+    margin: 50px 0 60px 0;
+    height: 150vh;
+    width: 105vw;
     display: flex;
     align-items: center;
-    background-image: url('../../../assets/image/Rectangle.png');
+    background-image: url('../../../assets/image/faixa.svg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -191,7 +191,12 @@ section.faixa {
         margin: 0 0 80px 0;
         background-image: url('../../../assets/image/rectangleMobile.png');
     }
-
+    .setaDireta {
+        margin: 0 2px 0 0;
+    }
+    .setaEsquerda{
+        margin: 0 0 0 12px;
+    }
     .containerText {
         width: auto;
     }
